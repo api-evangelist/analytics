@@ -14,22 +14,19 @@ apis:
     baseURL: https://analyticsdata.googleapis.com
     version: v1beta
     tags:
-      - analytics
-      - web analytics
-      - metrics
-      - tracking
+      - Analytics
+      - Metrics
+      - Tracking
+      - Web Analytics
     properties:
       - type: X-documentation
         url: https://developers.google.com/analytics/devguides/reporting/data/v1
       - type: X-openapi
-        url: 
-          https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/googleapis.com/analyticsdata/v1beta/openapi.yaml
+        url: https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/googleapis.com/analyticsdata/v1beta/openapi.yaml
       - type: X-authentication
-        url: 
-          https://developers.google.com/analytics/devguides/reporting/data/v1/quickstart-client-libraries
+        url: https://developers.google.com/analytics/devguides/reporting/data/v1/quickstart-client-libraries
       - type: X-pricing
-        url: 
-          https://developers.google.com/analytics/devguides/reporting/data/v1/quotas
+        url: https://developers.google.com/analytics/devguides/reporting/data/v1/quotas
     contact:
       - type: X-support
         url: https://support.google.com/analytics
@@ -41,10 +38,10 @@ apis:
     baseURL: https://api.mixpanel.com
     version: '2.0'
     tags:
-      - analytics
-      - product analytics
-      - user tracking
-      - events
+      - Analytics
+      - Events
+      - Product Analytics
+      - User Tracking
     properties:
       - type: X-documentation
         url: https://developer.mixpanel.com/docs
@@ -69,10 +66,10 @@ apis:
     baseURL: https://api.segment.io/v1
     version: v1
     tags:
-      - analytics
-      - customer data
-      - data pipeline
-      - integration
+      - Analytics
+      - Customer Data
+      - Data Pipeline
+      - Integration
     properties:
       - type: X-documentation
         url: https://segment.com/docs/api
@@ -95,18 +92,17 @@ apis:
     baseURL: https://demo.matomo.cloud
     version: '4.0'
     tags:
-      - analytics
-      - open source
-      - privacy
-      - self-hosted
+      - Analytics
+      - Open Source
+      - Privacy
+      - Self-Hosted
     properties:
       - type: X-documentation
         url: https://developer.matomo.org/api-reference
       - type: X-github
         url: https://github.com/matomo-org/matomo
       - type: X-authentication
-        url: 
-          https://developer.matomo.org/api-reference/reporting-api/authentication
+        url: https://developer.matomo.org/api-reference/reporting-api/authentication
     contact:
       - type: X-support
         url: https://matomo.org/support
@@ -120,10 +116,10 @@ apis:
     baseURL: https://plausible.io/api/v1
     version: v1
     tags:
-      - analytics
-      - privacy
-      - lightweight
-      - GDPR compliant
+      - Analytics
+      - GDPR Compliant
+      - Lightweight
+      - Privacy
     properties:
       - type: X-documentation
         url: https://plausible.io/docs
@@ -143,11 +139,11 @@ maintainers:
     email: apis@example.com
     url: https://example.com
 tags:
-  - analytics
-  - tracking
-  - metrics
-  - data
-  - reporting
-  - web analytics
-  - product analytics
-  - privacy
+  - Analytics
+  - Data
+  - Metrics
+  - Privacy
+  - Product Analytics
+  - Reporting
+  - Tracking
+  - Web Analytics
