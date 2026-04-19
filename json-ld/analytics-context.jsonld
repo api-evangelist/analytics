@@ -1,0 +1,108 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "analytics": "https://raw.githubusercontent.com/api-evangelist/analytics/refs/heads/main/vocabulary/",
+    "name": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+    "description": {
+      "@id": "schema:description",
+      "@type": "xsd:string"
+    },
+    "slug": {
+      "@id": "analytics:slug",
+      "@type": "xsd:string"
+    },
+    "category": {
+      "@id": "analytics:category",
+      "@type": "xsd:string"
+    },
+    "deployment": {
+      "@id": "analytics:deployment",
+      "@type": "xsd:string"
+    },
+    "license": {
+      "@id": "schema:license",
+      "@type": "xsd:string"
+    },
+    "website": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "apiReference": {
+      "@id": "schema:documentation",
+      "@type": "@id"
+    },
+    "sdks": {
+      "@id": "analytics:sdks",
+      "@container": "@set"
+    },
+    "dataCollection": {
+      "@id": "analytics:dataCollection",
+      "@type": "@id"
+    },
+    "privacy": {
+      "@id": "analytics:privacy",
+      "@type": "@id"
+    },
+    "integrations": {
+      "@id": "analytics:integrations",
+      "@container": "@set"
+    },
+    "pricing": {
+      "@id": "schema:offers",
+      "@type": "@id"
+    },
+    "tags": {
+      "@id": "schema:keywords",
+      "@container": "@set"
+    },
+    "events": {
+      "@id": "analytics:events",
+      "@type": "xsd:boolean"
+    },
+    "pageviews": {
+      "@id": "analytics:pageviews",
+      "@type": "xsd:boolean"
+    },
+    "sessions": {
+      "@id": "analytics:sessions",
+      "@type": "xsd:boolean"
+    },
+    "userIdentification": {
+      "@id": "analytics:userIdentification",
+      "@type": "xsd:boolean"
+    },
+    "customProperties": {
+      "@id": "analytics:customProperties",
+      "@type": "xsd:boolean"
+    },
+    "gdprCompliant": {
+      "@id": "analytics:gdprCompliant",
+      "@type": "xsd:boolean"
+    },
+    "ccpaCompliant": {
+      "@id": "analytics:ccpaCompliant",
+      "@type": "xsd:boolean"
+    },
+    "cookieless": {
+      "@id": "analytics:cookieless",
+      "@type": "xsd:boolean"
+    },
+    "dataResidency": {
+      "@id": "analytics:dataResidency",
+      "@container": "@set"
+    },
+    "model": {
+      "@id": "analytics:pricingModel",
+      "@type": "xsd:string"
+    },
+    "freeEvents": {
+      "@id": "analytics:freeEvents",
+      "@type": "xsd:integer"
+    }
+  }
+}

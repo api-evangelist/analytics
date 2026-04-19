@@ -1,0 +1,157 @@
+name: Analytics Vocabulary
+description: Vocabulary for the analytics platforms, tools, and SDKs ecosystem
+version: '1.0'
+created: '2026-04-19'
+modified: '2026-04-19'
+
+categories:
+  - id: web-analytics
+    label: Web Analytics
+    description: Platforms for tracking website traffic, page views, and visitor behavior
+    examples:
+      - Google Analytics
+      - Plausible
+      - Matomo
+      - Umami
+      - Swetrix
+      - OpenPanel
+
+  - id: product-analytics
+    label: Product Analytics
+    description: Platforms for tracking user interactions within products and applications
+    examples:
+      - Mixpanel
+      - Amplitude
+      - PostHog
+      - Heap
+      - FullStory
+      - LogRocket
+
+  - id: mobile-analytics
+    label: Mobile Analytics
+    description: SDKs and platforms for tracking mobile application behavior
+    examples:
+      - Firebase Analytics
+      - Adjust
+      - AppsFlyer
+      - Braze
+      - Clevertap
+
+  - id: customer-data-platform
+    label: Customer Data Platform
+    description: Platforms for collecting, unifying, and routing customer data
+    examples:
+      - Segment
+      - mParticle
+      - RudderStack
+      - Snowplow
+      - Tealium
+
+  - id: business-intelligence
+    label: Business Intelligence
+    description: Tools for querying, visualizing, and exploring analytics data
+    examples:
+      - Looker
+      - Tableau
+      - Metabase
+      - Redash
+      - Superset
+
+  - id: event-streaming
+    label: Event Streaming
+    description: Infrastructure for high-throughput event ingestion and streaming
+    examples:
+      - Apache Kafka
+      - Amazon Kinesis
+      - Google Pub/Sub
+      - Apache Flink
+      - Confluent
+
+  - id: real-time-analytics
+    label: Real-Time Analytics
+    description: Databases and engines optimized for real-time analytical queries
+    examples:
+      - ClickHouse
+      - Apache Druid
+      - Apache Pinot
+      - Firebolt
+      - StarRocks
+
+concepts:
+  - id: event
+    label: Event
+    description: A discrete user action or system occurrence captured with a timestamp and properties
+    aliases:
+      - track call
+      - hit
+      - interaction
+
+  - id: session
+    label: Session
+    description: A group of user interactions within a given time frame
+
+  - id: pageview
+    label: Page View
+    description: A recorded instance of a user loading a page in a web browser
+
+  - id: funnel
+    label: Funnel
+    description: A sequence of steps or events leading to a conversion goal
+
+  - id: cohort
+    label: Cohort
+    description: A group of users who share a common characteristic or performed an action in a defined period
+
+  - id: retention
+    label: Retention
+    description: The measure of how many users return to a product over time
+
+  - id: conversion
+    label: Conversion
+    description: A completed user action that represents a desired goal
+
+  - id: attribution
+    label: Attribution
+    description: The process of assigning credit to marketing channels for a conversion
+
+  - id: user-identification
+    label: User Identification
+    description: The process of linking anonymous events to known user profiles via identify calls
+
+  - id: data-residency
+    label: Data Residency
+    description: The requirement that data be stored and processed within a specific geographic region
+
+  - id: cookieless-tracking
+    label: Cookieless Tracking
+    description: Analytics methods that do not rely on browser cookies for user identification
+
+deployment_models:
+  - saas
+  - self-hosted
+  - hybrid
+  - open-source
+
+privacy_frameworks:
+  - GDPR
+  - CCPA
+  - PECR
+  - LGPD
+  - PIPEDA
+
+personas:
+  - id: growth-engineer
+    label: Growth Engineer
+    description: Engineers focused on user acquisition, activation, and retention metrics
+
+  - id: data-analyst
+    label: Data Analyst
+    description: Analysts who query and visualize analytics data to derive insights
+
+  - id: product-manager
+    label: Product Manager
+    description: PMs who use analytics to understand feature adoption and user journeys
+
+  - id: marketing-technologist
+    label: Marketing Technologist
+    description: Marketers who configure tracking, attribution, and audience segmentation

@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/analytics/refs/heads/main/json-schema/analytics-platform-schema.json",
+  "title": "Analytics Platform",
+  "description": "Schema describing an analytics platform, SDK, or tool in the analytics ecosystem",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the analytics platform"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly identifier"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the platform's capabilities"
+    },
+    "category": {
+      "type": "string",
+      "description": "Primary category of analytics",
+      "enum": [
+        "web-analytics",
+        "product-analytics",
+        "mobile-analytics",
+        "customer-data-platform",
+        "business-intelligence",
+        "event-streaming",
+        "real-time-analytics",
+        "session-replay",
+        "attribution"
+      ]
+    },
+    "deployment": {
+      "type": "string",
+      "enum": [
+        "saas",
+        "self-hosted",
+        "hybrid",
+        "open-source"
+      ],
+      "description": "Deployment model"
+    },
+    "license": {
+      "type": "string",
+      "description": "License type (MIT, Apache-2.0, Commercial, etc.)"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "apiReference": {
+      "type": "string",
+      "format": "uri",
+      "description": "Link to API reference documentation"
+    },
+    "sdks": {
+      "type": "array",
+      "description": "Available SDKs and client libraries",
+      "items": {
+        "type": "object",
+        "properties": {
+          "language": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "language"
+        ]
+      }
+    },
+    "dataCollection": {
+      "type": "object",
+      "description": "Data collection capabilities",
+      "properties": {
+        "events": {
+          "type": "boolean",
+          "description": "Supports event tracking"
+        },
+        "pageviews": {
+          "type": "boolean",
+          "description": "Supports page view tracking"
+        },
+        "sessions": {
+          "type": "boolean",
+          "description": "Supports session tracking"
+        },
+        "userIdentification": {
+          "type": "boolean",
+          "description": "Supports user identification"
+        },
+        "customProperties": {
+          "type": "boolean",
+          "description": "Supports custom event properties"
+        }
+      }
+    },
+    "privacy": {
+      "type": "object",
+      "description": "Privacy and compliance features",
+      "properties": {
+        "gdprCompliant": {
+          "type": "boolean"
+        },
+        "ccpaCompliant": {
+          "type": "boolean"
+        },
+        "cookieless": {
+          "type": "boolean",
+          "description": "Supports cookieless tracking"
+        },
+        "dataResidency": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported data residency regions"
+        }
+      }
+    },
+    "integrations": {
+      "type": "array",
+      "description": "Available integrations and destinations",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "destination",
+              "source",
+              "bidirectional"
+            ]
+          }
+        },
+        "required": [
+          "name"
+        ]
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "properties": {
+        "model": {
+          "type": "string",
+          "enum": [
+            "free",
+            "freemium",
+            "usage-based",
+            "subscription",
+            "open-source"
+          ]
+        },
+        "freeEvents": {
+          "type": "integer",
+          "description": "Number of free events per month"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "category"
+  ]
+}
