@@ -1,0 +1,82 @@
+generated: '2026-08-13'
+method: probed
+source: https://apievangelist.com/.well-known/
+name: Analytics — .well-known discovery probe
+description: >-
+  Record of the /.well-known/ discovery probe run for this profile. This repository is a
+  curated INDEX of the analytics ecosystem published by API Evangelist, not a company with
+  an API of its own: apis.yml carries no apis[] entries and therefore no baseURL and no
+  OpenAPI servers[] host to probe. The only host named anywhere in apis.yml is the
+  publisher's website (apievangelist.com, common[].type Website), so that is the host the
+  probe ran against, and the results below describe API EVANGELIST'S surface — not a
+  surface served by an "Analytics" provider.
+hosts:
+- host: apievangelist.com
+  role: publisher-website
+  note: >-
+    Named in apis.yml as common[].type Website. It is the site of the maintainer of this
+    index (API Evangelist), which is profiled separately at all/api-evangelist/. Anything
+    it serves belongs to that profile.
+probe:
+  checked: '2026-08-13'
+  host: https://apievangelist.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    note: SPA 404 page returned (HTML shell, ~64KB). Not a document.
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    note: SPA 404 page returned (HTML shell). Not a document.
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    note: SPA 404 page returned (HTML shell). Not a document.
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    content_type: application/json
+    parses_as: RFC 9727 linkset (JSON object with linkset[])
+    note: >-
+      A REAL document — a one-entry linkset anchored at https://apievangelist.com/skills/
+      with a service-desc of https://apievangelist.com/skills/index.json. It is API
+      Evangelist's own API catalog and describes API Evangelist's agent-skills index. It
+      is NOT saved into this repository and NOT wired as a pointer here, because doing so
+      would credit this topical index with a surface served by a different profile. Its
+      home is all/api-evangelist/.
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    note: SPA 404 page returned (HTML shell). Not a document.
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+    note: SPA 404 page returned (HTML shell). No A2A agent card.
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+    note: SPA 404 page returned (HTML shell). No legacy A2A agent card.
+  - path: /llms.txt
+    status: 200
+    file: null
+    note: >-
+      API Evangelist's own llms.txt (18KB, "# API Evangelist"). Belongs to
+      all/api-evangelist/, not to this index. This repo's llms/analytics-llms.txt is
+      GENERATED from apis.yml instead — see method: generated on that file.
+  - path: /openapi.json
+    status: 404
+    file: null
+    note: SPA 404 page returned (HTML shell).
+  - path: /apis.json
+    status: 404
+    file: null
+    note: SPA 404 page returned (HTML shell).
+result:
+  documents_found_for_this_profile: 0
+  pointer_emitted: false
+  pointer_reason: >-
+    No .well-known document is served by or on behalf of this index. The one 200 that
+    returned a real document (api-catalog) is API Evangelist's, and this profile is not
+    API Evangelist. Per the enrichment contract, a WellKnown pointer asserts that THIS
+    provider serves the surface, so none is emitted.

@@ -1,0 +1,77 @@
+# Analytics
+
+> A curated index of the analytics ecosystem, maintained by API Evangelist. It spans web and
+> product analytics, customer data platforms, mobile analytics, business intelligence, event
+> streaming, and real-time analytics infrastructure — SaaS and self-hosted, commercial and open
+> source. This is an INDEX, not a company: it has no API of its own. Its purpose is to point an
+> agent or a human at the individual provider profiles that DO carry machine-readable contracts.
+
+Generated: 2026-08-13
+Method: generated
+Source: apis.yml (aid: analytics) + repo artifacts
+Publisher: API Evangelist — https://apievangelist.com
+Profile: https://github.com/api-evangelist/analytics
+
+## What this index is not
+
+- It is not an API. There is no baseURL, no OpenAPI, no authentication, no rate limits, no
+  pricing, and no support channel attached to "Analytics" as an entity.
+- The `.well-known` and `llms.txt` documents served at apievangelist.com belong to the API
+  Evangelist profile, not to this index. See `well-known/analytics-well-known.yml`.
+- Each provider listed under "Ecosystem" is profiled separately and independently; go there for
+  contracts, scopes, security, rate limits and ratings.
+
+## Categories
+
+- Web Analytics — tracking website traffic and visitor behavior (Google Analytics, Plausible, Matomo, Umami, Swetrix, OpenPanel)
+- Product Analytics — tracking user interactions within products (Mixpanel, Amplitude, PostHog, Heap)
+- Mobile Analytics — mobile application behavior and attribution (Firebase, AppsFlyer)
+- Customer Data Platform — collecting, unifying and routing customer data (Segment, mParticle, RudderStack, Snowplow)
+- Business Intelligence — querying and visualizing analytics data (Looker, Tableau, Metabase, Redash)
+- Event Streaming — high-throughput event ingestion (Apache Kafka, Amazon Kinesis, Confluent)
+- Real-Time Analytics — real-time analytical query engines (ClickHouse, Apache Druid, Apache Pinot)
+
+## Ecosystem
+
+Each entry is an APIs.json (`apis.yml`) profile with its own APIs, artifacts and Kin Score.
+
+- [Google Analytics](https://raw.githubusercontent.com/api-evangelist/google-analytics/refs/heads/main/apis.yml)
+- [Mixpanel](https://raw.githubusercontent.com/api-evangelist/mixpanel/refs/heads/main/apis.yml)
+- [Amplitude](https://raw.githubusercontent.com/api-evangelist/amplitude/refs/heads/main/apis.yml)
+- [PostHog](https://raw.githubusercontent.com/api-evangelist/posthog/refs/heads/main/apis.yml)
+- [Plausible](https://raw.githubusercontent.com/api-evangelist/plausible/refs/heads/main/apis.yml)
+- [Matomo](https://raw.githubusercontent.com/api-evangelist/matomo/refs/heads/main/apis.yml)
+- [Heap](https://raw.githubusercontent.com/api-evangelist/heap/refs/heads/main/apis.yml)
+- [Segment](https://raw.githubusercontent.com/api-evangelist/segment/refs/heads/main/apis.yml)
+- [mParticle](https://raw.githubusercontent.com/api-evangelist/mparticle/refs/heads/main/apis.yml)
+- [RudderStack](https://raw.githubusercontent.com/api-evangelist/rudderstack/refs/heads/main/apis.yml)
+- [Firebase](https://raw.githubusercontent.com/api-evangelist/firebase/refs/heads/main/apis.yml)
+- [AppsFlyer](https://raw.githubusercontent.com/api-evangelist/appsflyer/refs/heads/main/apis.yml)
+- [Braze](https://raw.githubusercontent.com/api-evangelist/braze/refs/heads/main/apis.yml)
+- [Looker](https://raw.githubusercontent.com/api-evangelist/looker/refs/heads/main/apis.yml)
+- [Tableau](https://raw.githubusercontent.com/api-evangelist/tableau/refs/heads/main/apis.yml)
+- [Metabase](https://raw.githubusercontent.com/api-evangelist/metabase/refs/heads/main/apis.yml)
+- [Redash](https://raw.githubusercontent.com/api-evangelist/redash/refs/heads/main/apis.yml)
+- [OpenPanel](https://raw.githubusercontent.com/api-evangelist/openpanel/refs/heads/main/apis.yml)
+- [Snowplow](https://raw.githubusercontent.com/api-evangelist/snowplow/refs/heads/main/apis.yml)
+- [Keen](https://raw.githubusercontent.com/api-evangelist/keen/refs/heads/main/apis.yml)
+- [Swetrix](https://raw.githubusercontent.com/api-evangelist/swetrix/refs/heads/main/apis.yml)
+
+## Artifacts
+
+- [JSON Schema — analytics platform](https://raw.githubusercontent.com/api-evangelist/analytics/refs/heads/main/json-schema/analytics-platform-schema.json): the shape of an entry in this index (name, slug, category, deployment model, privacy posture).
+- [JSON-LD context](https://raw.githubusercontent.com/api-evangelist/analytics/refs/heads/main/json-ld/analytics-context.jsonld): linked-data context for the same shape.
+- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/analytics/refs/heads/main/vocabulary/analytics-vocabulary.yaml): categories, concepts, deployment models, privacy frameworks and personas for the analytics domain.
+- [Spectral rules](https://raw.githubusercontent.com/api-evangelist/analytics/refs/heads/main/rules/analytics-jsonschema-spectral-rules.yml): lint rules that validate an entry against the JSON Schema.
+- [.well-known probe](https://raw.githubusercontent.com/api-evangelist/analytics/refs/heads/main/well-known/analytics-well-known.yml): recorded absence — no discovery document is served for this index.
+
+## Tags
+
+Analytics, Business Intelligence, Customer Data Platform, Data Pipeline, Event Tracking,
+Mobile Analytics, Observability, Product Analytics, Real-Time Analytics, Web Analytics
+
+## Optional
+
+- [APIs.json profile](https://raw.githubusercontent.com/api-evangelist/analytics/refs/heads/main/apis.yml)
+- [API Evangelist](https://apievangelist.com)
+- [APIs.io catalog](https://apis.io)
