@@ -5,6 +5,17 @@ description: >-
   Matomo, Heap) to customer data platforms (Segment, mParticle, RudderStack), mobile analytics (Firebase Analytics, Adjust, AppsFlyer, Braze), business intelligence (Looker, Tableau, Metabase, Redash),
   event streaming (Kafka, Kinesis), and real-time analytics infrastructure (ClickHouse, Druid, Pinot). Covers both SaaS and self-hosted, open source and commercial offerings.
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
