@@ -1,5 +1,10 @@
 aid: analytics
 name: Analytics
+# x-type: index -- an API Evangelist INDEX, not a company (roadmap#402). This record is
+# this catalog's own aggregation of other people's APIs. score.rb's NON_PROVIDER_X_TYPES
+# excludes it from rating and from provider lists; the page stays, because it is a real
+# piece of curation someone may link to.
+x-type: index
 description: >-
   A curated index of analytics platforms, SDKs, and open source solutions spanning the full analytics spectrum — from web and product analytics (Google Analytics, Mixpanel, Amplitude, PostHog, Plausible,
   Matomo, Heap) to customer data platforms (Segment, mParticle, RudderStack), mobile analytics (Firebase Analytics, Adjust, AppsFlyer, Braze), business intelligence (Looker, Tableau, Metabase, Redash),
